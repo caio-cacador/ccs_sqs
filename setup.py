@@ -9,5 +9,5 @@ setup(name='CCS SQS',
       description='Utilities to be used with AWS SQS',
       author='Caio Caçador da Silva',
       author_email='caiocacador.s@gmail.com',
-      url='https://github.com/caio-cacador/ccs_crawler_base',
+      url='https://github.com/caio-cacador/ccs_sqs',
       packages=['sqs'])
