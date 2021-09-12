@@ -39,8 +39,8 @@ class SQS:
 
         self._sqs = boto3.client('sqs', region_name=aws_region)
         self._application_name = application_name
-        self._queue_to_send = self._sqs.get_queue_url(QueueName=queue_to_send)
-        self._queue_to_received = self._sqs.get_queue_url(QueueName=queue_to_received)
+        self._queue_to_send = self._sqs.get_queue_url(QueueName=queue_to_send)['QueueUrl']
+        self._queue_to_received = self._sqs.get_queue_url(QueueName=queue_to_received)['QueueUrl']
         self.__print('[-] Done!')
 
     def __print(self, _print: str):
